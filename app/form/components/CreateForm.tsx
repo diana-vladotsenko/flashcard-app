@@ -8,7 +8,7 @@ export default function CreateForm({ categories }: { categories: Category[] }) {
 
   async function handleSubmit(formData: FormData) {
     startTransition(async () => {
-      await createFlashcard(formData); // ✅ server action call
+      await createFlashcard(formData);
     });
   }
 
