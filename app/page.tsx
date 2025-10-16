@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
       <div className="w-full max-w-5xl p-5">
-        <h2 className="font-medium text-2xl mb-6">Flashcard app</h2>
+        <h2 className="font-medium text-2xl mb-6">Flashcards</h2>
 
         {!cards?.length && (
           <div className="rounded-2xl border border-border bg-muted/30 text-muted-foreground p-8 text-center">

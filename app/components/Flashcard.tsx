@@ -24,25 +24,22 @@ export default function Flashcard({ question, answer, category }: Props) {
           </span>
           <span className="text-[11px] text-gray-400">Flashcard</span>
         </div>
-
         <div className="mt-3">
           <p className="text-lg font-semibold text-gray-900">{question}</p>
         </div>
-
         <details className="mt-4 group/ans">
           <summary className="inline-flex cursor-pointer select-none items-center gap-2 text-sm text-gray-700 hover:text-gray-900">
             <span
               className="
-  rounded-full 
-    border border-indigo-500 
-    bg-white 
-    px-3 py-1.5 
-    text-xs font-medium text-indigo-600
-    transition-colors duration-200
-    hover:bg-indigo-500 hover:text-white
-    active:bg-indigo-600
-    disabled:opacity-50
-  "
+              rounded-full 
+              border border-indigo-500 
+              bg-white 
+              px-3 py-1.5 
+              text-xs font-medium text-indigo-600
+              transition-colors duration-200
+              hover:bg-indigo-500 hover:text-white
+              active:bg-indigo-600
+              disabled:opacity-50"
             >
               View answer
             </span>
