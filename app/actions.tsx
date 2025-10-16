@@ -63,3 +63,12 @@ export async function updateFlashcard(formData: FormData) {
 
   revalidatePath("/");
 }
+
+export async function deleteFlashcard(id: number) {
+  const supabase = await createClient();
+  const { error } = await supabase.from("card").delete().eq("id", id);
+
+  if (error) throw new Error(error.message);
+
+  revalidatePath("/");
+}

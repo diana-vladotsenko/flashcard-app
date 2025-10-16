@@ -1,8 +1,9 @@
 import { getCards, getCategories } from "./actions";
 import Flashcard from "./components/Flashcard";
 import UpdateModal from "./components/UpdateModal";
+import DeleteButton from "./components/DeleteButton";
 
-export default async function Home() {
+export default async function Page() {
   const cards = await getCards();
   const categories = await getCategories();
 
@@ -29,12 +30,7 @@ export default async function Home() {
                     currentCategory={c.category?.name}
                     categories={categories}
                   />
-                  {/* <button
-                    onClick={handleDelete}
-                    className="text-sx red-400 bg-white px-3 py-1 text-xs font-medium text-red-600 hover:text-red-700"
-                  >
-                    Delete
-                  </button> */}
+                  <DeleteButton id={c.id} />
                 </div>
 
                 <Flashcard
